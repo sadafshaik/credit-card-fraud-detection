@@ -16,7 +16,9 @@ pandas
 matplotlib
 seaborn
 scikit-learn
-Algorithms
+
+**Algorithms**
+
 Logistic Regression
 Random Forest
 XGBoost
