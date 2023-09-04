@@ -1,13 +1,12 @@
 # Credit Card Fraud Detection
 ## Dataset Information
-It is important that credit card companies are able to recognize fraudulent credit card transactions so that customers are not charged for items that they did not purchase.
+It is crucial for credit card companies to be able to identify fraudulent credit card transactions to ensure that customers are not wrongfully charged for purchases they did not make.
 
-The dataset contains transactions made by credit cards in September 2013 by European cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
+The dataset in question contains records of credit card transactions that occurred in September 2013, involving European cardholders. This dataset covers transactions over two days, with 492 instances of fraud detected among a total of 284,807 transactions. Notably, the dataset is heavily imbalanced, with the occurrence of frauds accounting for only 0.172% of all transactions.
 
-It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, we cannot provide the original features and more background information about the data. Features V1, V2, … V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-sensitive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
+The dataset primarily consists of numerical input variables resulting from a Principal Component Analysis (PCA) transformation. Unfortunately, due to confidentiality constraints, the original features and additional context about the data cannot be provided. The features labeled V1, V2, … V28 represent the principal components derived from PCA, while the 'Time' and 'Amount' features remain untransformed. 'Time' denotes the time elapsed in seconds between each transaction and the first transaction in the dataset, while 'Amount' represents the transaction amount. The 'Class' feature serves as the response variable, taking a value of 1 in cases of fraud and 0 otherwise.
 
-Given the class imbalance ratio, we recommend measuring the accuracy using the Area Under the Precision-Recall Curve (AUPRC). Confusion matrix accuracy is not meaningful for unbalanced classification.
-
+Given the substantial class imbalance, it is advisable to evaluate model performance using the Area Under the Precision-Recall Curve (AUPRC) rather than relying solely on traditional confusion matrix accuracy, which may not be meaningful in unbalanced classification scenarios.
 Download link: https://www.kaggle.com/mlg-ulb/creditcardfraud
 
 **Libraries**
